@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+    width: 100%;
+}
+header{
+    text-align: center;
+    max-width: 750px;
+    padding: 0px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+@font-face {
+    font-family: 'Caprasimo';
+    src: url('tipo_letra/Caprasimo-Regular.ttf');
+}
+header h1{
+    font-family: 'caprasimo';
+    font-size: 7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+header .frase{
+    font-size: 3rem;
+    line-height: 1.5rem;
+    max-width: 550px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    text-align: center;
+}
+#menu{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+   
+}
+#menu a{
+    color: black;
+    font-family: 'Cambria';
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+#menu a:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.995);   
+}
+.redes{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+}
+.redes a{
+    color: black;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.redes a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.995);
+}
+
+
+
+/*pagina blog*/
+.pagina-blog{
+    background-image: none;
+    background-color: rgba(255, 191, 227, 0.834);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    position: relative;
+}
+.pagina-blog #contenedor{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+}
+.pagina-blog #contenedor header{
+    text-align: center;
+    max-width: 750px;
+    padding:  10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    min-height: auto;
+}
+.pagina-blog header h1{
+    font-family: 'caprasimo',sans-serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.pagina-blog #img-portada img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.pagina-blog #img-portada{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.pagina-blog #frase{
+    font-family: 'playfair display','georgia',serif;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #4a3b32;
+}
+.pagina-blog .columna{
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #4a3b32;
+    text-align: justify;
+}
+.pagina-blog .columna-centro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    text-align: justify;
+    color: #4a3b32;
+}
+.pagina-blog .columna-centro img{
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 0;
+}
+
+.pagina-blog .redes{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+/*pagina fotos*/
+.pagina-fotos {
+    position: relative;
+    background-image: none;
+    background-color: rgba(255, 191, 227, 0.834);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.pagina-fotos #contenedor{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.pagina-fotos #contenedor header{
+    text-align: center;
+    max-width: 750px;
+    padding:  10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    min-height: auto;
+}
+.pagina-fotos header h1{
+    font-family: 'caprasimo';
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.pagina-fotos #contenido{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 20px;
+    max-width: 1300px;
+    margin-top: 40px;
+}
+.pagina-fotos .tarjeta{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pagina-fotos .tarjeta:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgb(43, 41, 41);
+}
+.pagina-fotos .tarjeta img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+.pagina-fotos .tarjeta p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 12px;
+}
+.pagina-fotos .redes{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+}
+
+
+
+/*pagina-videos*/
+.pagina-videos{
+    position: relative;
+    background-image: none;
+    background-color: rgba(255, 191, 227, 0.834);
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.pagina-videos #contenedor{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.pagina-videos #contenedor header{
+    text-align: center;
+    max-width: 750px;
+    padding:  10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    min-height: auto;
+}
+.pagina-videos header h1{
+    font-family: 'caprasimo';
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.pagina-videos #frase{
+    font-family: 'playfair display','georgia',serif;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.pagina-videos #texto p{
+    font-family: 'poppins','montserrat',sans-serif;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.pagina-videos #vimeo,#youtube{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 550px;
+}
+.pagina-videos #vimeo iframe, #youtube iframe{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+.pagina-videos #redes{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+.pagina-videos #redes a{
+    color: black;
+    text-decoration: none;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.pagina-videos #redes a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.995);
+}
